@@ -1,14 +1,14 @@
 <div id="navbar">
-    <a class="section-title stylized-font" href="/paddyonthebinge" id="Logo">PADDY ON THE BINGE</a>
+    <a class="section-title stylized-font" href="{{ '/' | relative_url }}" id="Logo">PADDY ON THE BINGE</a>
     {% if page.title == "Home" %}
-        <a class="section-title active" href="/paddyonthebinge" id="Home">Home</a>
+        <a class="section-title active" href="{{ '/' | relative_url }}" id="Home">Home</a>
     {% else %}
-        <a class="section-title" href="/paddyonthebinge" id="Home">Home</a>
+        <a class="section-title" href="{{ '/' | relative_url }}" id="Home">Home</a>
     {% endif %}
     {% if page.title == "About" %}
-        <a class="section-title active" href="/paddyonthebinge/about" id="About">About Us</a>
+        <a class="section-title active" href="{{ '/about' | relative_url }}" id="About">About Us</a>
     {% else %}
-        <a class="section-title" href="/paddyonthebinge/about" id="About">About Us</a>
+        <a class="section-title" href="{{ '/about' | relative_url }}" id="About">About Us</a>
     {% endif %}
     <a href="javascript:void(0);" class="burger" onclick="hamburger()">
         <i class="fa fa-bars"></i>
