@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    {%- include head.html -%}
+    <body>
+        {%- include navbar.html -%}
+        <section id="hero">
+            <div id="background">
+                <div id="spotify-container">
+                    <iframe id="spotify" data-hook="spotify-iframe" src="https://open.spotify.com/embed?uri=spotify%3Aalbum%3A39dTK4YKfLyCW7owRQjIy4" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+        </section>
+        <section id="tagline">
+            <a id="book-us" class="stylized-font">BOOK US NOW!</a>
+            <p style="margin: 0px; padding-top: 50px;">Traditional Irish, Scottish, and other music bits from Davis, California</p>
+        </section>
+        <section id="announcements">
+            <div id="announcement-title">ST PATRICK'S DAY - MARCH 2025</div>
+            <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center;">
+                <img class="poster" src="assets/images/st_pats_in_the_park_poster.png" height="500px">
+                <img class="poster" src="assets/images/st_pats_2025_schedule.png" height="500px">
+            </div>
+        </section>
+        {%- include footer.html -%}
+    </body>
+</html>

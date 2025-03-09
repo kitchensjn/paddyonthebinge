@@ -1,0 +1,218 @@
+---
+---
+
+body {
+  background: #FFFFFF;
+  color: #000000;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+
+/* Navigation Bar */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(28, 9, 9);
+  z-index: 1000;
+  font-size: 20px;
+}
+
+.stylized-font {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#Logo {
+  font-size: 68px;
+}
+
+.section-title {
+  float: left;
+  padding: 17px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 68px;
+  color: rgb(173, 149, 134);
+}
+
+.section-title:hover {
+  color: rgb(241, 227, 200);
+  cursor: pointer;
+}
+
+.active {
+  pointer-events: none;
+  cursor: default;
+  color: rgb(241, 227, 200);
+}
+
+/* Mobile Dropdown Menu Burger */
+.burger {
+  float: left;
+  text-align: center;
+  padding: 17px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  display: none; 
+  line-height: 68px;
+  color: rgb(173, 149, 134);
+}
+
+.burger:hover {
+  color: rgb(241, 227, 200);
+}
+
+//.burger:link, .burger:visited {
+//  color: rgb(173, 149, 134);
+//}
+
+.inactiveLink {
+  pointer-events: none;
+  cursor: default;
+}
+
+@media screen and (max-width: 880px) {
+  #navbar .section-title:not(:first-child) {
+      display: none;
+  }
+  #navbar .burger {
+      float: right;
+      display: block;
+  }
+  #navbar.responsive {
+      position: fixed;
+  }
+  #navbar.responsive .burger {
+      position: fixed;
+      right: 0;
+      top: 0;
+      transform: rotate(90deg);
+  }
+  #navbar.responsive .section-title {
+      float: none;
+      display: block;
+      text-align: left;
+  }
+  #navbar.responsive .section-title:not(:first-child) {
+      line-height: 34px;
+  }
+  #navbar.responsive .section-title:hover {
+      background-color: rgb(241, 227, 200);
+      color: rgb(28, 9, 9);
+  }
+}
+
+.section-title:hover, .section-title:link,
+.active:hover, .active:link, .burger:hover,
+.inactive:hover {
+  text-decoration: none;
+}
+
+
+
+/* home */
+#hero {
+    position: relative;
+    height: 85vh;
+    min-height: 600px;
+    background-color: #000000;
+}
+
+#hero #background {
+    height: 100%;
+    width: 100%;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("/assets/images/homepage_band_illustration.png");
+    position: relative;
+}
+
+#spotify-container {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#spotify {
+    height: 300px;
+    width: 75%;
+    max-width: 1000px;
+}
+
+#tagline {
+    background-color: #000000;
+    color: rgb(241, 227, 200);
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+    padding: 50px;
+}
+
+#book-us {
+    color: rgb(241, 227, 200);
+    outline: rgb(241, 227, 200) 2px solid;
+    padding: 10px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+#book-us:hover {
+    background-color: rgb(241, 227, 200);
+    color: rgb(28, 9, 9);
+    cursor: pointer;   
+}
+
+
+#announcements {
+    background-color: rgb(42, 44, 40);
+    color: rgb(241, 227, 200);
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+    padding: 25px 25px 100px 25px;
+}
+
+#announcement-title {
+    padding-bottom: 25px;
+}
+
+.poster {
+    margin: 10px;
+    outline: rgb(28, 9, 9) 5px solid;
+}
+
+.headshot {
+    outline: rgb(241, 227, 200) 5px solid;
+}
+
+
+
+/* footer */
+#footer {
+    background-color: rgb(170, 61, 29);
+    height: 65px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.social {
+    color: rgb(241, 227, 200);
+}
+
+.social:hover {
+    color: #FFFFFF;
+    cursor: pointer;
+}
